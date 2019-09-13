@@ -19,7 +19,7 @@ GPU Warmup
 Sudoku
 :  Write a GPU-based sudoku solver using constraint propagation.
 
-## Autograders adn 
+## Autograders and Solutions
 Autograders and solutions are available for some of the labs. I will happily provide these to faculty at other colleges and universities. Please send your request by email.
 
 ## License
