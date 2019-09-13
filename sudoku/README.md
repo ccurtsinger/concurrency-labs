@@ -6,13 +6,13 @@ We'll spend some time at the start of lab to discuss the rules of sudoku.
 We will also discuss strategies for parallelizing sudoku solving and select the approach that will work best on the GPU.
 
 ### Acknowlegements
-Today's lab was inspired by Peter Norvig's post [Solving Every Sudoku Puzzle](http://norvig.com/sudoku.html){:target="_blank"}.
+Today's lab was inspired by Peter Norvig's post [Solving Every Sudoku Puzzle](http://norvig.com/sudoku.html).
 We will use a technique similar to Norvig's sudoku solver, though you will see that a GPU-based solver is ***much*** faster than Norvig's Python implementation.
 
-The inputs for this lab were obtained from [Kaggle](https://www.kaggle.com/bryanpark/sudoku/kernels){:target="_blank"}, and are licensed CC-0.
+The inputs for this lab were obtained from [Kaggle](https://www.kaggle.com/bryanpark/sudoku/kernels), and are licensed CC-0.
 
 ## Introduction to Sudoku
-If you have never completed a sudoku before, or you are unsure of the rules, you should quickly read through Sudoku Dragon's [Introduction to Sudoku](http://www.sudokudragon.com/sudoku.htm){:target="_blank"}.
+If you have never completed a sudoku before, or you are unsure of the rules, you should quickly read through Sudoku Dragon's [Introduction to Sudoku](http://www.sudokudragon.com/sudoku.htm).
 I will review the rules below;
 even if you already know them, make sure to read carefully so we can agree on terminology that will be important when we discuss solving strategies.
 
@@ -37,12 +37,12 @@ Region Constraints
 These constraints are sufficient to limit a sudoku board to just one possible solution;
 your task when solving the sudoku is to fill in every cell without violating any constraints.
 Creating starting boards that have exactly one possible solution is actually an interesting challenge, both computationally and theoretically;
-if you are interested, you can read more about the mathematics of sudoku on [Wikipedia](https://en.wikipedia.org/wiki/Mathematics_of_Sudoku){:target="_blank"}.
+if you are interested, you can read more about the mathematics of sudoku on [Wikipedia](https://en.wikipedia.org/wiki/Mathematics_of_Sudoku).
 
 There are many strategies that humans use to solve sudoku, but we'll focus on one specific strategy that we can implement on a computer.
 
 ## Sudoku Solving Strategies
-You can read about some sudoku solving strategies meant for humans on the Sudoku Dragon [strategies](http://www.sudokudragon.com/sudokustrategy.htm){:target="_blank"} page.
+You can read about some sudoku solving strategies meant for humans on the Sudoku Dragon [strategies](http://www.sudokudragon.com/sudokustrategy.htm) page.
 While these strategies work well for people, they are designed to minimize the amount of information you have to keep track of;
 learning these strategies is learning to recognize patterns and act on them without having to remember something about 81 different cells on the board.
 
